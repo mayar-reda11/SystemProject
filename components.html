@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Component library</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="Site-header">
+            <h1>My Project</h1>
+            <nav= class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">About Us</a>
+                <a href="components.html">Component Us</a>
+            </nav>
+        </header>
+        <main class="main">
+
+            <section class="card">
+                <h2>Alert Message</h2>
+                 <div class="alert-box">
+                    Alert: Welcome to your new webside! 
+                 </div>
+            </section>
+
+            <section class="card">
+                <h2>Form Elements</h2>
+                <form>
+
+                    <div class="form">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="major">Select Major</label>
+                        <select id="major" name="major">
+                            <option value="programming">Programming</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </section>
+
+            <section class="card" id="modal-section">
+                <h2>Modal Window</h2>
+                <p>Click the button to open the modal</p>
+                <a href="#open-modal" class="btn">Open Modal</a>
+
+                <div id="open-modal" class="modal-overlay">
+                    <div class="modal-contant">
+                        <h3>Modal Title</h3>
+                        <p>This is a CSS-only modal window!</p>
+                        <a href="#modal-section" class="btn close-btn">Close</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 my project</p>
+        </footer>
+    </body>
+</html>
